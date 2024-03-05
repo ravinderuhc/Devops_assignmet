@@ -5,7 +5,8 @@ app = Flask(__name__)
 # Dummy data to simulate tasks
 tasks = [
     {"id": 1, "title": "Task 1", "description": "Complete assignment"},
-    {"id": 2, "title": "Task 2", "description": "Prepare presentation"}
+    {"id": 2, "title": "Task 2", "description": "Prepare presentation"},
+    {"id": 3, "title": "Task 3", "description": "Prepare presentation"}
 ]
 
 # Route to display all tasks
