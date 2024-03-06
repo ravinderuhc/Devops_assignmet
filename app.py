@@ -7,7 +7,8 @@ app.config['WTF_CSRF_ENABLED'] = False # Sensitive
 tasks = [
     {"id": 1, "title": "Task 1", "description": "Complete assignment"},
     {"id": 2, "title": "Task 2", "description": "Prepare presentation"},
-    {"id": 3, "title": "Task 3", "description": "Prepare presentation"}
+    {"id": 3, "title": "Task 3", "description": "Prepare presentation"},
+    {"id": 4, "title": "Task 4", "description": "Prepare presentation"}
 ]
 
 # Route to display all tasks
