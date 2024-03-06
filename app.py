@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
-app.config['WTF_CSRF_ENABLED'] = False # Sensitive
 
 # Dummy data to simulate tasks
 tasks = [
