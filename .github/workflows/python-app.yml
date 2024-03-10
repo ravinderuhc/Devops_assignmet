@@ -48,3 +48,4 @@ jobs:
           # mandatory
           -Dsonar.projectKey="ravinderuhc_Devops_assignmet"
           -Dsonar.organization="ravinderuhc"
+          -Dsonar.pullrequest.branch="main"
