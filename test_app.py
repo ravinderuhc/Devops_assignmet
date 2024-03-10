@@ -25,6 +25,18 @@ def test_add_task_route():
     # Check if the new task is added to the tasks list
     assert any(task['title'] == 'New Task' for task in tasks)
 
+def test_delete_task_route():
+    # Create a test client for the Flask application
+    client = app.test_client()
+    # Define the data to be sent in the POST request
+    data = {'title': 'New Task'}
+    # Send a POST request to the '/add' route with the defined data
+    response = client.post('/delete', data=data, follow_redirects=True)
+    # Check if the response status code is 200 (OK) after redirection
+    assert response.status_code == 200
+    # Check if the new task is added to the tasks list
+    assert any(task['title'] != 'New Task' for task in tasks)
+
 # Run pytest to execute the test functions
 if __name__ == '__main__':
     pytest.main()
