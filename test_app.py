@@ -30,7 +30,7 @@ def test_delete_task_route():
     client = app.test_client()
     # Define the data to be sent in the POST request
     data = {'title': 'New Task'}
-    # Send a POST request to the '/add' route with the defined data
+    # Send a POST request to the '/delete' route with the defined data
     response = client.post('/delete', data=data, follow_redirects=True)
     # Check if the response status code is 200 (OK) after redirection
     assert response.status_code == 200
