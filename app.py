@@ -23,5 +23,19 @@ def add_task():
     tasks.append({"id": len(tasks) + 1, "title": title, "description": description})
     return redirect(url_for('index'))
 
+# Route to add a new task
+@app.route('/delete', methods=['POST'])
+def delete_task():
+    title = request.form['title']
+    tasks.pop(title)
+    return redirect(url_for('index'))
+
+# Route to add a new task
+@app.route('/update', methods=['POST'])
+def update_task():
+    title = request.form['title']
+    tasks.pop(title)
+    return redirect(url_for('index'))
+
 if __name__ == '__main__':
     app.run(debug=True)
