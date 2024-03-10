@@ -46,5 +46,5 @@ jobs:
         args:
           # Unique keys of your project and organization. You can find them in SonarCloud > Information (bottom-left menu)
           # mandatory
-          -Dsonar.projectKey="Devops_assignmet"
+          -Dsonar.projectKey="ravinderuhc_Devops_assignmet"
           -Dsonar.organization="ravinderuhc"
